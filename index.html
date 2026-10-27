@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRT To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="crt-header">
+            <p class="status">SYSTEM READY</p>
+            <h1>MY TO-DO LIST</h1>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="taskInput" placeholder="Enter your task..." maxlength="80">
+            <button id="addBtn" type="button">ADD</button>
+        </div>
+
+        <ul id="taskList" aria-live="polite"></ul>
+        <p id="emptyMessage">No tasks added yet!</p>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
